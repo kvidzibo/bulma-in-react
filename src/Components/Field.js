@@ -4,8 +4,8 @@ import Control from './Control'
 export default class Field extends PureComponent {
   render () {
     const {
-      label = '',
       children = null,
+      label = '',
       error = '',
       success,
       uncontrolled

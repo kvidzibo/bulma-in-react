@@ -7,7 +7,6 @@ export default class Button extends PureComponent {
     const {
       children,
       control,
-      onClick,
       loading,
       primary,
       success,
@@ -21,7 +20,8 @@ export default class Button extends PureComponent {
       hovered,
       focused,
       active,
-      icon
+      icon,
+      ...otherProps
     } = this.props
 
     const className = classnames({
@@ -43,7 +43,7 @@ export default class Button extends PureComponent {
 
     return (
       <Control control={control}>
-        <button className={className} onClick={onClick}>
+        <button className={className} {...otherProps}>
           {!!icon && <span className="icon is-small"><i className={`fa fa-${icon}`}></i></span>}
           {children}
         </button>
