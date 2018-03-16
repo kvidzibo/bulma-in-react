@@ -6,16 +6,24 @@ export default class Button extends PureComponent {
   render () {
     const {
       children,
+      control,
       onClick,
-      loading = false,
-      primary = false,
-      success = false,
-      info = false,
-      link = false,
-      warning = false,
-      danger = false,
-      control
+      loading,
+      primary,
+      success,
+      info,
+      link,
+      warning,
+      danger,
+      outlined,
+      inverted,
+      rounded,
+      hovered,
+      focused,
+      active,
+      icon
     } = this.props
+
     const className = classnames({
       'button': 1,
       'is-loading': loading,
@@ -24,12 +32,21 @@ export default class Button extends PureComponent {
       'is-info': info,
       'is-link': link,
       'is-warning': warning,
-      'is-danger': danger
+      'is-danger': danger,
+      'is-outlined': outlined,
+      'is-inverted': inverted,
+      'is-rounded': rounded,
+      'is-hovered': hovered,
+      'is-focused': focused,
+      'is-active': active
     })
 
     return (
       <Control control={control}>
-        <button className={className} onClick={onClick}>{children}</button>
+        <button className={className} onClick={onClick}>
+          {!!icon && <span className="icon is-small"><i className={`fa fa-${icon}`}></i></span>}
+          {children}
+        </button>
       </Control>
     )
   }
