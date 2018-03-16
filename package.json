@@ -1,0 +1,51 @@
+{
+  "name": "bulma-in-react",
+  "version": "0.0.2",
+  "description": "bulma components library",
+  "main": "dist",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watchAll",
+    "clean:build": "rm -rf dist && rm -rf lib && rm -rf full",
+    "build": "WEBPACK_ENV=INCLUDE_CSS webpack --progress --color --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com:kvidzibo/bulma-in-react.git"
+  },
+  "keywords": [
+    "bulma",
+    "react"
+  ],
+  "author": "Tomas Rackauskas",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "bulma": "^0.6.2",
+    "font-awesome": "^4.7.0",
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.37",
+    "@babel/preset-env": "^7.0.0-beta.37",
+    "@babel/preset-react": "^7.0.0-beta.37",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^8.2.2",
+    "babel-jest": "^22.4.1",
+    "babel-loader": "^8.0.0-beta.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.18.2",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^22.4.2",
+    "webpack": "^4.1.1"
+  }
+}
