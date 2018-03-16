@@ -38,6 +38,7 @@
 | Properties    | Type |
 | ------------- | ---- |
 | icon          | text |
+
 f.e. icon="github" will generate i.fa.fa-github
 ## Input
 | Properties    | Type |
