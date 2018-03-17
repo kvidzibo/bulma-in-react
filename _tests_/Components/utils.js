@@ -15,13 +15,6 @@ export const propToClass = (Component, prop, className = false, number = 1, debu
   })
 }
 
-export const control = (Component) => {
-  test(`adds control`, () => {
-    const component = mount(<Component control/>)
-    expect(component.find(`.control`).length).toBe(1)
-  })
-}
-
 export const children = (Component) => {
   test(`displays children`, () => {
     const component = mount(<Component>test</Component>)

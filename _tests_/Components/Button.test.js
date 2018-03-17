@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { propToClass, control } from './utils'
+import { propToClass } from './utils'
 
 import { Button } from '../../src/Components'
 
@@ -17,8 +17,7 @@ propToClass(Button, 'rounded')
 propToClass(Button, 'hovered')
 propToClass(Button, 'focused')
 propToClass(Button, 'active')
-
-control(Button)
+propToClass(Button, 'fielded', '.field')
 
 test('icon', () => {
   const comp = mount(<Button icon="add"/>)

@@ -1,6 +1,6 @@
 {
   "name": "bulma-in-react",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "bulma components library",
   "main": "dist",
   "scripts": {
@@ -21,19 +21,23 @@
   "license": "ISC",
   "dependencies": {
     "classnames": "^2.2.5",
+    "node-watch": "^0.5.8",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.40",
     "@babel/plugin-proposal-class-properties": "^7.0.0-beta.37",
-    "@babel/preset-env": "^7.0.0-beta.37",
-    "@babel/preset-react": "^7.0.0-beta.37",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "@babel/preset-react": "^7.0.0-beta.42",
     "babel-cli": "^6.26.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^8.2.2",
-    "babel-jest": "^22.4.1",
+    "babel-jest": "^23.0.0-alpha.0",
     "babel-loader": "^8.0.0-beta.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
     "bulma": "^0.6.2",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -46,7 +50,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "font-awesome": "^4.7.0",
     "jest": "^22.4.2",
-    "webpack": "^4.1.1",
-    "webpack-cli": "^2.0.12"
+    "react-test-renderer": "^16.2.0",
+    "webpack": "^3.10.0"
   }
 }

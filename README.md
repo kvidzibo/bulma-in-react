@@ -3,7 +3,7 @@
 | Properties    | Type |
 | ------------- | ---- |
 | children      | node |
-| control       | bool |
+| fielded       | bool |
 | loading       | bool |
 | primary       | bool |
 | success       | bool |
@@ -56,3 +56,26 @@ f.e. icon="github" will generate i.fa.fa-github
 | link          | bool |
 | warning       | bool |
 | danger        | bool |
+## Tile
+| Properties    | Type |
+| ------------- | ---- |
+| children      | node |
+| title         | text |
+| subtitle      | text |
+## Hero
+| Properties    | Type |
+| ------------- | ---- |
+| title         | text |
+| subtitle      | text |
+| primary       | bool |
+| success       | bool |
+| info          | bool |
+| link          | bool |
+| warning       | bool |
+| danger        | bool |
+## Level
+| Properties    | Type |
+| ------------- | ---- |
+| items         | []   |
+
+items example: [{title: T1, heading: H1}, {title: T2, heading: H2}]

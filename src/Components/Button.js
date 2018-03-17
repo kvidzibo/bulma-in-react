@@ -1,12 +1,12 @@
 import React, { PureComponent } from 'react'
 import classnames from 'classnames'
-import Control from './Control'
+import Fielded from './Fielded'
 
 export default class Button extends PureComponent {
   render () {
     const {
       children,
-      control,
+      fielded,
       loading,
       primary,
       success,
@@ -42,12 +42,12 @@ export default class Button extends PureComponent {
     })
 
     return (
-      <Control control={control}>
+      <Fielded fielded={fielded}>
         <button className={className} {...otherProps}>
           {!!icon && <span className="icon is-small"><i className={`fa fa-${icon}`}></i></span>}
           {children}
         </button>
-      </Control>
+      </Fielded>
     )
   }
 }
