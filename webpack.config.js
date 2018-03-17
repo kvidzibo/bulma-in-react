@@ -1,13 +1,13 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
   devtool: 'source-maps',
   entry: './src/Components/index.js',
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "index.js",
-    library: "bulma-in-react",
-    libraryTarget: "umd"
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'index.js',
+    library: 'bulma-in-react',
+    libraryTarget: 'umd'
   },
   module: {
     rules: [
@@ -15,7 +15,7 @@ module.exports = {
         test: /\.js?$/,
         loader: 'babel-loader'
       }
-    ],
+    ]
   },
   resolve: {
     modules: ['node_modules', './src'],
@@ -24,6 +24,6 @@ module.exports = {
   externals: {
     react: 'commonjs react',
     'react-dom': 'commonjs react-dom',
-    'prop-types': 'commonjs prop-types',
-  },
-};
+    'prop-types': 'commonjs prop-types'
+  }
+}

@@ -7,7 +7,7 @@
     "test": "jest",
     "watch": "jest --watchAll",
     "clean:build": "rm -rf dist && rm -rf lib && rm -rf full",
-    "build": "webpack --progress --color --mode production"
+    "build": "webpack --progress --color -p"
   },
   "repository": {
     "type": "git",
