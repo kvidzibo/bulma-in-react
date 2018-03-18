@@ -6,7 +6,6 @@
   "scripts": {
     "test": "jest",
     "watch": "jest --watchAll",
-    "clean:build": "rm -rf dist && rm -rf lib && rm -rf full",
     "build": "webpack --progress --color -p"
   },
   "repository": {
@@ -26,6 +25,8 @@
   },
   "devDependencies": {
     "babel-jest": "^23.0.0-alpha.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "bulma": "^0.6.2",
