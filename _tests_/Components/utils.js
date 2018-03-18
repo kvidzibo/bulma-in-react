@@ -22,9 +22,10 @@ export const children = (Component) => {
   })
 }
 
-export const textProps = (Component, prop, selector) => {
+export const textProps = (Component, prop, selector, debug = false) => {
   test(`displays test in ${selector} because of ${prop} passed`, () => {
     const component = mount(<Component {...{[prop]: 'test'}}/>)
+    debug && console.log(component.debug())
     selector
       ? expect(component.find(selector).text()).toBe('test') : expect(component.text()).toBe('test')
   })
@@ -35,5 +36,14 @@ export const emptyRender = (Component, selector, number = 1, debug = 0) => {
     const component = mount(<Component />)
     debug && console.log(component.debug())
     expect(component.find(selector).length).toBe(number)
+  })
+}
+
+export const click = (Component) => {
+  test(`onClick`, () => {
+    const onClick = jest.fn()
+    const component = mount(<Component onClick={onClick} />)
+    component.find(Component).simulate('click')
+    expect(onClick.mock.calls.length).toBe(1)
   })
 }

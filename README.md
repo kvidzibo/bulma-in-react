@@ -78,4 +78,23 @@ f.e. icon="github" will generate i.fa.fa-github
 | ------------- | ---- |
 | items         | []   |
 
-items example: [{title: T1, heading: H1}, {title: T2, heading: H2}]
+items:
+```
+[{title: T1, heading: H1}, {title: T2, heading: H2}]
+```
+## Card
+| Properties    | Type |
+| ------------- | ---- |
+| children      | node |
+| header        | text |
+| image         | text |
+| footerItems   | []   |
+
+items:
+```
+[<CardFooterItem />, <CardFooterItem />]
+```
+## CardFooterItem
+| Properties    | Type |
+| ------------- | ---- |
+| children      | node |
