@@ -1,5 +1,7 @@
 # Components
 ## Button
+
+[![Join the chat at https://gitter.im/bulma-in-react/Lobby](https://badges.gitter.im/bulma-in-react/Lobby.svg)](https://gitter.im/bulma-in-react/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 | Properties    | Type |
 | ------------- | ---- |
 | children      | node |
