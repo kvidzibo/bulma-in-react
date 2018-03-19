@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types'
 
-export default class Control extends PureComponent {
+class Control extends PureComponent {
   render () {
     const {
       children,
@@ -14,3 +15,10 @@ export default class Control extends PureComponent {
     return children
   }
 }
+
+Control.propTypes = {
+  children: PropTypes.node,
+  control: PropTypes.bool
+}
+
+export default Control

@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types'
 
-export default class Content extends PureComponent {
+class Content extends PureComponent {
   render () {
     const { children } = this.props
     return (
@@ -8,3 +9,9 @@ export default class Content extends PureComponent {
     )
   }
 }
+
+Content.propTypes = {
+  children: PropTypes.node
+}
+
+export default Content

@@ -1,13 +1,14 @@
 import React, { PureComponent } from 'react'
-import Control from './Control'
+import PropTypes from 'prop-types'
+import { Control } from './private'
 
-export default class Field extends PureComponent {
+class Field extends PureComponent {
   render () {
     const {
       children = null,
       label = '',
       error = '',
-      success,
+      success = '',
       uncontrolled
     } = this.props
 
@@ -23,3 +24,13 @@ export default class Field extends PureComponent {
     )
   }
 }
+
+Field.propTypes = {
+  children: PropTypes.node,
+  label: PropTypes.string,
+  error: PropTypes.string,
+  success: PropTypes.string,
+  uncontrolled: PropTypes.bool
+}
+
+export default Field

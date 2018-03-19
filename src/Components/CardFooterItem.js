@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types'
 
 class CardFooterItem extends PureComponent {
   render () {
@@ -10,6 +11,10 @@ class CardFooterItem extends PureComponent {
       </a>
     )
   }
+}
+
+CardFooterItem.propTypes = {
+  children: PropTypes.node
 }
 
 export default CardFooterItem

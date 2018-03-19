@@ -1,9 +1,10 @@
 import React, { PureComponent } from 'react'
 import classnames from 'classnames'
+import PropTypes from 'prop-types'
 
 class Input extends PureComponent {
   render () {
-    const {error, success, className, ...inputProps} = this.props
+    const {error, success, className = 'input', ...inputProps} = this.props
     const classNames = classnames(
       className,
       {
@@ -16,10 +17,13 @@ class Input extends PureComponent {
 }
 
 Input.defaultProps = {
-  type: 'text',
-  className: 'input',
-  error: '',
-  success: ''
+  type: 'text'
+}
+
+Input.propTypes = {
+  error: PropTypes.bool,
+  success: PropTypes.bool,
+  className: PropTypes.string
 }
 
 export default Input

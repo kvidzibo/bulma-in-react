@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types'
 
-export default class Fielded extends PureComponent {
+class Fielded extends PureComponent {
   render () {
     const {
       children,
@@ -14,3 +15,10 @@ export default class Fielded extends PureComponent {
     return children
   }
 }
+
+Fielded.propTypes = {
+  children: PropTypes.node,
+  fielded: PropTypes.bool
+}
+
+export default Fielded

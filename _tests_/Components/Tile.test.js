@@ -1,7 +1,7 @@
 import { children, textProps } from './utils'
-import { Tile } from '../../src/Components'
+import { Tile as Comp } from '../../src/Components'
 
-children(Tile)
+children(Comp)
 
-textProps(Tile, 'title')
-textProps(Tile, 'subtitle')
+textProps(Comp, 'title')
+textProps(Comp, 'subtitle')

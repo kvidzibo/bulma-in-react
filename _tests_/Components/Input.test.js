@@ -1,6 +1,6 @@
 import { emptyRender, propToClass } from './utils'
-import { Input } from '../../src/Components'
+import { Input as Comp } from '../../src/Components'
 
-emptyRender(Input, 'input.input')
-propToClass(Input, 'error', '.is-danger')
-propToClass(Input, 'success', '.is-success')
+emptyRender(Comp, 'input.input')
+propToClass(Comp, 'error', '.is-danger')
+propToClass(Comp, 'success', '.is-success')

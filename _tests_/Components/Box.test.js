@@ -1,4 +1,4 @@
 import { children } from './utils'
-import { Box } from '../../src/Components'
+import { Box as Comp } from '../../src/Components'
 
-children(Box)
+children(Comp)

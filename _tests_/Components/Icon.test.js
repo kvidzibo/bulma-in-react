@@ -1,4 +1,4 @@
 import { propToClass } from './utils'
-import { Icon } from '../../src/Components'
+import { Icon as Comp } from '../../src/Components'
 
-propToClass(Icon, {icon: 'test'}, 'i.fa-test')
+propToClass(Comp, {icon: 'test'}, 'i.fa-test')

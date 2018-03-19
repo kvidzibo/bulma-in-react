@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types'
 
-export default class Tile extends PureComponent {
+class Tile extends PureComponent {
   render () {
-    const { children, title = '', subtitle = '' } = this.props
+    const { children, title, subtitle } = this.props
     return (
       <div className="tile is-ancestor container is-fluid">
         <div className="tile is-parent">
@@ -16,3 +17,11 @@ export default class Tile extends PureComponent {
     )
   }
 }
+
+Tile.propTypes = {
+  children: PropTypes.node,
+  title: PropTypes.string,
+  subtitle: PropTypes.string
+}
+
+export default Tile

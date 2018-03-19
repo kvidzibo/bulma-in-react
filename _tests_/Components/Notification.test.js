@@ -1,10 +1,10 @@
 import { propToClass } from './utils'
 
-import { Notification } from '../../src/Components'
+import { Notification as Comp } from '../../src/Components'
 
-propToClass(Notification, 'primary')
-propToClass(Notification, 'success')
-propToClass(Notification, 'info')
-propToClass(Notification, 'link')
-propToClass(Notification, 'warning')
-propToClass(Notification, 'danger')
+propToClass(Comp, 'primary')
+propToClass(Comp, 'success')
+propToClass(Comp, 'info')
+propToClass(Comp, 'link')
+propToClass(Comp, 'warning')
+propToClass(Comp, 'danger')

@@ -5,7 +5,8 @@
   "main": "dist",
   "scripts": {
     "test": "jest",
-    "watch": "jest --watchAll",
+    "coverage": "jest --coverage",
+    "watch": "jest --watchAll --coverage",
     "build": "webpack --progress --color -p"
   },
   "repository": {
@@ -24,6 +25,7 @@
     "react-dom": "^16.2.0"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.2",
     "babel-jest": "^23.0.0-alpha.0",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
@@ -44,5 +46,8 @@
     "node-watch": "^0.5.8",
     "react-test-renderer": "^16.2.0",
     "webpack": "^3.10.0"
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": ["/node_modules/", "/_tests_/", "/private/"]
   }
 }

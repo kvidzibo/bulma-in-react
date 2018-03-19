@@ -1,4 +1,4 @@
 import { children } from './utils'
-import { Content } from '../../src/Components'
+import { Content as Comp } from '../../src/Components'
 
-children(Content)
+children(Comp)

@@ -22,12 +22,45 @@ export const children = (Component) => {
   })
 }
 
+export const numberOfChildren = (Component, number = 1, debug = false) => {
+  test(`requires specific ${number} children`, () => {
+    const children = []
+    for (var i = 0; i < number; i++) {
+      children.push(<span key={i} className="children">{i}</span>)
+    }
+    const component = mount(
+      <Component>
+        {children}
+      </Component>
+    )
+    debug && console.log(component.debug())
+    expect(component.find('.children').length).toBe(number)
+  })
+
+  test(`throws error if not ${number} children is provided`, () => {
+    global.console = {error: jest.fn()}
+    const children = []
+    for (var i = 0; i < number - 1; i++) {
+      children.push(<span key={i} className="children">{i}</span>)
+    }
+    mount(<Component>{children}</Component>)
+    expect(global.console.error.mock.calls.length).toBe(1)
+  })
+}
+
 export const textProps = (Component, prop, selector, debug = false) => {
   test(`displays test in ${selector} because of ${prop} passed`, () => {
     const component = mount(<Component {...{[prop]: 'test'}}/>)
     debug && console.log(component.debug())
     selector
       ? expect(component.find(selector).text()).toBe('test') : expect(component.text()).toBe('test')
+  })
+}
+
+export const toBeNull = (Component, props) => {
+  test(`onClick`, () => {
+    const component = mount(<Component {...props} />)
+    expect(component.html()).toBe(null)
   })
 }
 

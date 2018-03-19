@@ -1,25 +1,19 @@
-import React from 'react'
-import { mount } from 'enzyme'
 import { propToClass } from './utils'
 
-import { Button } from '../../src/Components'
+import { Button as Comp } from '../../src/Components'
 
-propToClass(Button, 'loading')
-propToClass(Button, 'primary')
-propToClass(Button, 'success')
-propToClass(Button, 'info')
-propToClass(Button, 'link')
-propToClass(Button, 'warning')
-propToClass(Button, 'danger')
-propToClass(Button, 'outlined')
-propToClass(Button, 'inverted')
-propToClass(Button, 'rounded')
-propToClass(Button, 'hovered')
-propToClass(Button, 'focused')
-propToClass(Button, 'active')
-propToClass(Button, 'fielded', '.field')
-
-test('icon', () => {
-  const comp = mount(<Button icon="add"/>)
-  expect(comp.find('i.fa-add').length).toBe(1)
-})
+propToClass(Comp, 'loading')
+propToClass(Comp, 'primary')
+propToClass(Comp, 'success')
+propToClass(Comp, 'info')
+propToClass(Comp, 'link')
+propToClass(Comp, 'warning')
+propToClass(Comp, 'danger')
+propToClass(Comp, 'outlined')
+propToClass(Comp, 'inverted')
+propToClass(Comp, 'rounded')
+propToClass(Comp, 'hovered')
+propToClass(Comp, 'focused')
+propToClass(Comp, 'active')
+propToClass(Comp, 'fielded', '.field')
+propToClass(Comp, {icon: 'add'}, 'i.fa-add')

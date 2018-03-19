@@ -1,10 +1,10 @@
 import React from 'react'
 import { mount } from 'enzyme'
 import './utils'
-import { Level } from '../../src/Components'
+import { Level as Comp } from '../../src/Components'
 
 test('displays correctly', () => {
-  const component = mount(<Level items={[
+  const component = mount(<Comp items={[
     {heading: 'H1', title: 'T1'},
     {heading: 'H2', title: 'T2'}
   ]}/>)

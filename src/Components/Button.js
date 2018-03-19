@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react'
 import classnames from 'classnames'
-import Fielded from './Fielded'
+import { Fielded } from './private'
+import PropTypes from 'prop-types'
 
-export default class Button extends PureComponent {
+class Button extends PureComponent {
   render () {
     const {
       children,
@@ -51,3 +52,24 @@ export default class Button extends PureComponent {
     )
   }
 }
+
+Button.propTypes = {
+  children: PropTypes.node,
+  fielded: PropTypes.bool,
+  loading: PropTypes.bool,
+  primary: PropTypes.bool,
+  success: PropTypes.bool,
+  info: PropTypes.bool,
+  link: PropTypes.bool,
+  warning: PropTypes.bool,
+  danger: PropTypes.bool,
+  outlined: PropTypes.bool,
+  inverted: PropTypes.bool,
+  rounded: PropTypes.bool,
+  hovered: PropTypes.bool,
+  focused: PropTypes.bool,
+  active: PropTypes.bool,
+  icon: PropTypes.string
+}
+
+export default Button

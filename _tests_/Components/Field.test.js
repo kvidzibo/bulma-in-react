@@ -1,10 +1,10 @@
 import { children, textProps, propToClass } from './utils'
-import { Field } from '../../src/Components'
+import { Field as Comp } from '../../src/Components'
 
-children(Field)
+children(Comp)
 
-textProps(Field, 'label')
-textProps(Field, 'error', '.is-danger')
-textProps(Field, 'success', '.is-success')
-propToClass(Field, 'uncontrolled', '.control', 1)
-propToClass(Field, '', '.control', 2)
+textProps(Comp, 'label')
+textProps(Comp, 'error', '.is-danger')
+textProps(Comp, 'success', '.is-success')
+propToClass(Comp, 'uncontrolled', '.control', 1)
+propToClass(Comp, '', '.control', 2)

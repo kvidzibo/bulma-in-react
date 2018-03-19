@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 class Level extends PureComponent {
   render () {
-    const { items = [] } = this.props
+    const { items } = this.props
     return (
       <nav className="level">
         {items.map((item, key) => (

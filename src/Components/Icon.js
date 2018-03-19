@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types'
 
-export default class Icon extends PureComponent {
+class Icon extends PureComponent {
   render () {
     const {
       icon
@@ -13,3 +14,9 @@ export default class Icon extends PureComponent {
     )
   }
 }
+
+Icon.propTypes = {
+  icon: PropTypes.string
+}
+
+export default Icon
