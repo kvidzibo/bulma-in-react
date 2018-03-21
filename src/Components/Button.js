@@ -22,6 +22,7 @@ class Button extends PureComponent {
       focused,
       active,
       icon,
+      static: stat,
       ...otherProps
     } = this.props
 
@@ -39,7 +40,8 @@ class Button extends PureComponent {
       'is-rounded': rounded,
       'is-hovered': hovered,
       'is-focused': focused,
-      'is-active': active
+      'is-active': active,
+      'is-static': stat
     })
 
     return (
@@ -69,6 +71,7 @@ Button.propTypes = {
   hovered: PropTypes.bool,
   focused: PropTypes.bool,
   active: PropTypes.bool,
+  static: PropTypes.bool,
   icon: PropTypes.string
 }
 

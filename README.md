@@ -38,6 +38,7 @@
 | hovered       | bool |
 | focused       | bool |
 | active        | bool |
+| static        | bool |
 | icon          | text |
 ## Card
 | Properties    | Type |
