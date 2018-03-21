@@ -4,13 +4,14 @@ import PropTypes from 'prop-types'
 class FieldWithAddons extends PureComponent {
   render () {
     const {
-      children
+      children,
+      expanded
     } = this.props
 
     return (
       <div className='field has-addons'>
         {children.map((c, k) => (
-          <p className="control" key={k}>
+          <p className={`control${(expanded && k === (children.length - 1)) ? ' is-expanded' : ''}`} key={k}>
             {c}
           </p>
         ))}

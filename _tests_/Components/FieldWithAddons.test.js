@@ -9,3 +9,10 @@ test('renders correctly', () => {
   expect(comp.find('.control').at(0).text()).toBe('T1')
   expect(comp.find('.control').at(1).text()).toBe('T2')
 })
+
+test('renders correctly with expanded', () => {
+  const comp = mount(<Comp expanded><span>T1</span><span>T2</span></Comp>)
+  expect(comp.find('.is-expanded').length).toBe(1)
+  expect(comp.find('.control').at(0).text()).toBe('T1')
+  expect(comp.find('.control').at(1).text()).toBe('T2')
+})

@@ -39,6 +39,7 @@
 | focused       | bool |
 | active        | bool |
 | static        | bool |
+| fullwidth     | bool |
 | icon          | text |
 ## Card
 | Properties    | Type |
@@ -60,6 +61,10 @@ items:
 | Properties    | Type |
 | ------------- | ---- |
 | children      | node |
+## EqualColumns
+| Properties    | Type |
+| ------------- | ---- |
+| children      | node |
 ## Field
 | Properties    | Type |
 | ------------- | -----|
@@ -72,6 +77,7 @@ items:
 | Properties    | Type |
 | ------------- | -----|
 | children      | node |
+| expanded      | node |
 ## Hero
 | Properties    | Type |
 | ------------- | ---- |
@@ -130,6 +136,16 @@ items:
 | children      | node |
 | title         | text |
 | subtitle      | text |
+## Select
+| Properties    | Type |
+| ------------- | ---- |
+| options       | []   |
+| fullwidth     | bool |
+
+items:
+```
+[{label: l1, value: v1}]
+```
 ## Textarea
 
 normal textarea props

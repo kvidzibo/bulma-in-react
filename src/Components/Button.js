@@ -22,12 +22,14 @@ class Button extends PureComponent {
       focused,
       active,
       icon,
+      fullwidth,
       static: stat,
       ...otherProps
     } = this.props
 
     const className = classnames({
       'button': 1,
+      'is-fullwidth': fullwidth,
       'is-loading': loading,
       'is-primary': primary,
       'is-success': success,
@@ -72,6 +74,7 @@ Button.propTypes = {
   focused: PropTypes.bool,
   active: PropTypes.bool,
   static: PropTypes.bool,
+  fullwidth: PropTypes.bool,
   icon: PropTypes.string
 }
 
