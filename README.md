@@ -13,6 +13,7 @@
 * [Loader](#loader)
 * [Notification](#notification)
 * [RangeField](#rangefield)
+* [Section](#Section)
 * [Textarea](#textarea)
 * [Tile](#tile)
 ## Box
@@ -118,6 +119,12 @@ items:
 | ------------- | ---- |
 | children      | node |
 | seperator     | text |
+## Section
+| Properties    | Type |
+| ------------- | ---- |
+| children      | node |
+| title         | text |
+| subtitle      | text |
 ## Textarea
 
 normal textarea props
