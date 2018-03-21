@@ -67,6 +67,10 @@ items:
 | label         | text |
 | error         | text |
 | success       | text |
+## FieldWithAddons
+| Properties    | Type |
+| ------------- | -----|
+| children      | node |
 ## Hero
 | Properties    | Type |
 | ------------- | ---- |
