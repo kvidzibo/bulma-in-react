@@ -16,6 +16,7 @@
 * [Section](#Section)
 * [Textarea](#textarea)
 * [Tile](#tile)
+* [Tr](#tr)
 ## Box
 | Properties    | Type |
 | ------------- | ---- |
