@@ -141,6 +141,7 @@ items:
 | ------------- | ---- |
 | options       | []   |
 | fullwidth     | bool |
+| placeholder   | text |
 
 items:
 ```
@@ -155,3 +156,9 @@ normal textarea props
 | children      | node |
 | title         | text |
 | subtitle      | text |
+## Tr
+| Properties    | Type |
+| ------------- | ---- |
+| children      | node |
+| label         | text |
+| labels        | []   |

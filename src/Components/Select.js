@@ -7,6 +7,7 @@ class Select extends PureComponent {
     const {
       options,
       fullwidth,
+      placeholder,
       ...otherProps
     } = this.props
     const classname = classnames({
@@ -16,6 +17,7 @@ class Select extends PureComponent {
     return (
       <div className={classname}>
         <select {...otherProps}>
+          {!!placeholder && <option disabled value=''>{placeholder}</option>}
           {options.map((o, k) => (<option key={k} value={o.value}>{o.label}</option>))}
         </select>
       </div>
