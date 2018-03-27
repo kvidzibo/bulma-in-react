@@ -13,7 +13,9 @@
 * [Loader](#loader)
 * [Notification](#notification)
 * [RangeField](#rangefield)
-* [Section](#Section)
+* [Section](#section)
+* [Select](#select)
+* [Span](#span)
 * [Textarea](#textarea)
 * [Tile](#tile)
 * [Tr](#tr)
@@ -148,6 +150,27 @@ items:
 ```
 [{label: l1, value: v1}]
 ```
+## Span
+| Properties    | Type |
+| ------------- | ---- |
+| children      | node |
+| fielded       | bool |
+| loading       | bool |
+| primary       | bool |
+| success       | bool |
+| info          | bool |
+| link          | bool |
+| warning       | bool |
+| danger        | bool |
+| outlined      | bool |
+| inverted      | bool |
+| rounded       | bool |
+| hovered       | bool |
+| focused       | bool |
+| active        | bool |
+| static        | bool |
+| fullwidth     | bool |
+| icon          | text |
 ## Textarea
 
 normal textarea props
