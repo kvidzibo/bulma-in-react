@@ -154,23 +154,15 @@ items:
 | Properties    | Type |
 | ------------- | ---- |
 | children      | node |
-| fielded       | bool |
-| loading       | bool |
-| primary       | bool |
-| success       | bool |
-| info          | bool |
-| link          | bool |
-| warning       | bool |
+| capitalized   | bool |
+| lowercase     | bool |
+| uppercase     | bool |
+| italic        | bool |
+| bold          | bool |
 | danger        | bool |
-| outlined      | bool |
-| inverted      | bool |
-| rounded       | bool |
-| hovered       | bool |
-| focused       | bool |
-| active        | bool |
-| static        | bool |
-| fullwidth     | bool |
-| icon          | text |
+| warning       | bool |
+| success       | bool |
+| primary       | bool |
 ## Textarea
 
 normal textarea props
